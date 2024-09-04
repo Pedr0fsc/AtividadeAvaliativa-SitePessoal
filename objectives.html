@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <ul>
+            <li><a href="homepage.html"><span class="material-symbols-outlined">home</span></a></li>
+            <li><a href="aboutme.html">Sobre Mim</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="objectives.html">Objetivos</a></li>
+            <li><a href="contacts.html">Contato</a></li>
+        </ul>
+        <div class="logo_wrap" style="text-align: center;">
+            <img class="logo_img" src="../Images/Logo.png" alt="logo">
+        </div>
+    </header>
+    <div class="wrap-everything">
+        <div class="content">
+            <p><b>Objetivos de Vida</b><br><br>
+
+                Meus objetivos de vida refletem minha paixão por tecnologia, aprendizado contínuo e exploração do mundo.
+                Atualmente, estou focado em alcançar três metas principais que considero essenciais para meu crescimento
+                pessoal e profissional:<br><br>
+
+                <b>Ingressar na PUCPR</b>: Meu primeiro objetivo é ser aceito na Pontifícia Universidade Católica do Paraná
+                (PUCPR), onde planejo aprofundar meus estudos em Tecnologia da Informação. A PUCPR é renomada por seu
+                excelente corpo docente e infraestrutura de ponta, e estou ansioso para aproveitar essas oportunidades
+                para expandir meus conhecimentos e habilidades.<br><br>
+
+                <b>Ingressar na Apple Developer Academy:</b> Outro objetivo fundamental é integrar a Apple Developer Academy,
+                um programa prestigioso que oferece formação avançada em desenvolvimento de software e design. Acredito
+                que essa experiência será crucial para me conectar com a vanguarda da inovação tecnológica, aprimorar
+                minhas competências e colaborar com profissionais de destaque no setor.<br><br>
+
+                <b>Viajar o Mundo:</b> Além dos objetivos acadêmicos e profissionais, tenho uma forte aspiração de viajar o
+                mundo. Acredito que a exposição a diferentes culturas e experiências enriquecerá minha perspectiva e
+                criatividade, além de proporcionar oportunidades únicas de aprendizado e crescimento pessoal.<br><br>
+            </p>
+        </div>
+        <footer>
+            <div class="footer">
+                <script>
+                    const footerElm = document.querySelector('.footer');
+                    const footerGithubLink = document.createElement('a');
+                    footerGithubLink.href = 'https://github.com/Pedr0fsc/';
+                    const footerGithubLinkIcon = document.createElement('img');
+                    footerGithubLinkIcon.src = "/Images/Github_Icon.png";
+                    footerGithubLinkIcon.classList.add('footer-icon');
+                    footerGithubLink.appendChild(footerGithubLinkIcon);
+                    footerElm.appendChild(footerGithubLink);
+                    footerElm.innerHTML = "&copy; %YEAR% Pedro da Fonseca Schwertner.".replace('%YEAR%', new Date().getFullYear())
+                </script>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

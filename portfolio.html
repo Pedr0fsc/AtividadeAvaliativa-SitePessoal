@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <ul>
+            <li><a href="homepage.html"><span class="material-symbols-outlined">home</span></a></li>
+            <li><a href="aboutme.html">Sobre Mim</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="objectives.html">Objetivos</a></li>
+            <li><a href="contacts.html">Contato</a></li>
+        </ul>
+        <div class="logo_wrap" style="text-align: center;">
+            <img class="logo_img" src="../Images/Logo.png" alt="logo">
+        </div>
+    </header>
+    <div class="wrap-everything">
+        <div class="content">
+            <p><b>Projetos Notáveis</b><br><br>
+
+                Desenvolvimento de Sites para a ONHB: Participei ativamente na criação de sites para a ONHB, aplicando tecnologias como JavaScript e React. Esses projetos me permitiram explorar e aprimorar minhas habilidades em desenvolvimento front-end, criando soluções funcionais e responsivas para atender às necessidades específicas da instituição.<br>
+                <a class="links" href="https://onhb.pages.dev/">Descubra aqui</a><br><br>
+                Projetos de Aprendizado com JavaScript e React: Realizei uma série de projetos voltados para o aprendizado prático das tecnologias JavaScript e React. Esses projetos foram fundamentais para meu crescimento como desenvolvedor, proporcionando uma base sólida e experiência valiosa em construção de interfaces e aplicações interativas.<br>
+                <a class="links" href="https://github.com/Pedr0fsc?tab=repositories">Descubra aqui</a><br><br>
+                Equipe de Robótica Ampharos: Contribuí para a equipe de robótica Ampharos, onde envolvi-me em diversos aspectos técnicos e colaborativos. Esta experiência foi essencial para aprimorar minha capacidade de trabalhar em equipe e aplicar conhecimentos de programação e engenharia em desafios reais.<br>
+                <a class="links" href="https://www.instagram.com/p/CpnoGsboGqc/?hl=tr">Descubra aqui</a><br><br>
+            </p>
+        </div>
+        <footer>
+            <div class="footer">
+                <script>
+                    const footerElm = document.querySelector('.footer');
+                    const footerGithubLink = document.createElement('a');
+                    footerGithubLink.href = 'https://github.com/Pedr0fsc/';
+                    const footerGithubLinkIcon = document.createElement('img');
+                    footerGithubLinkIcon.src = "/Images/Github_Icon.png";
+                    footerGithubLinkIcon.classList.add('footer-icon');
+                    footerGithubLink.appendChild(footerGithubLinkIcon);
+                    footerElm.appendChild(footerGithubLink);
+                    footerElm.innerHTML = "&copy; %YEAR% Pedro da Fonseca Schwertner.".replace('%YEAR%', new Date().getFullYear())
+                </script>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

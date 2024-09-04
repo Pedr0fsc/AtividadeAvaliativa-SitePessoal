@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <ul>
+            <li><a href="homepage.html"><span class="material-symbols-outlined">home</span></a></li>
+            <li><a href="aboutme.html">Sobre Mim</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="objectives.html">Objetivos</a></li>
+            <li><a href="contacts.html">Contato</a></li>
+        </ul>
+        <div class="logo_wrap" style="text-align: center;">
+            <img class="logo_img" src="../Images/Logo.png" alt="logo">
+        </div>
+    </header>
+    <div class="wrap-everything">
+        <div class="content">
+            <p> Olá, meu nome é Pedro da Fonseca Schwertner e sou um estudante do ensino médio apaixonado pela área de
+                Tecnologia da Informação. Atualmente, estou focado no desenvolvimento de sites e aplicativos, com uma
+                sólida experiência prática e um compromisso contínuo com o aprendizado e a inovação.<br><br>
+
+                Minha jornada na tecnologia começou com projetos desafiadores e enriquecedores. Trabalhei no
+                desenvolvimento de sites para a ONHB, onde tive a oportunidade de aplicar minhas habilidades em
+                JavaScript e React para criar soluções eficazes e intuitivas. Além disso, contribuí para a equipe de
+                robótica Ampharos, onde pude expandir minha experiência e conhecimento técnico em um ambiente
+                colaborativo e dinâmico.<br><br>
+
+                Além das minhas atividades tecnológicas, tenho um forte interesse em design e sou conhecido por minha
+                capacidade de raciocínio rápido. Essas habilidades são complementadas pela minha paixão por leitura,
+                programação e jogos, que me ajudam a manter a criatividade e a resolver problemas de forma inovadora.<br><br>
+
+                Este site tem como objetivo apresentar meu trabalho, compartilhar minhas experiências e facilitar
+                conexões com outros profissionais e entusiastas da área. Estou sempre aberto a novas oportunidades e
+                colaborações, e espero que você encontre valor e inspiração no que compartilho aqui.<br><br>
+
+                Obrigado pela visita e sinta-se à vontade para explorar e entrar em contato para qualquer dúvida ou
+                colaboração.</p>
+        </div>
+        <footer>
+            <div class="footer">
+                <script>
+                    const footerElm = document.querySelector('.footer');
+                    const footerGithubLink = document.createElement('a');
+                    footerGithubLink.href = 'https://github.com/Pedr0fsc/';
+                    const footerGithubLinkIcon = document.createElement('img');
+                    footerGithubLinkIcon.src = "/Images/Github_Icon.png";
+                    footerGithubLinkIcon.classList.add('footer-icon');
+                    footerGithubLink.appendChild(footerGithubLinkIcon);
+                    footerElm.appendChild(footerGithubLink);
+                    footerElm.innerHTML = "&copy; %YEAR% Pedro da Fonseca Schwertner.".replace('%YEAR%', new Date().getFullYear())
+                </script>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

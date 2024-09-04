@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header{
+    width: 100vw;
+    height: 6rem;
+    background-color: #151B23;
+    position: fixed;
+    transition: box-shadow 100ms ease-in-out;
+    z-index: 999;
+  }
+  
+  .header-box-shadow{
+    box-shadow: rgba(22, 18, 18, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: #4db2da;
+  }
+  
+  header > ul {
+    padding: 2rem;
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    z-index: -111;
+  }
+  
+  .logo_wrap{
+    position: absolute;
+    top: -1rem;
+    left: calc(50vw - 3rem);
+  }
+  
+  .logo_img{
+    width: 6rem;
+    height: auto;
+  }
+  
+  a{
+    font-family: 'Courier New';
+    color: #D1D7E0;
+    transition: all 50ms linear;
+    text-decoration-line: none;
+  }
+    
+  a:hover{
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .wrap-everything {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:#212830;
+  
+  }
+  
+  .content{
+    height: 40rem;
+    width: 100%;
+    display: flex;
+    background-color: #212830;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #D1D7E0;
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .contact{
+    height: 40rem;
+    width: 100%;
+    display: flex;
+    background-color: #212830;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #D1D7E0;
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  p {
+    font-family: 'Courier New';
+    
+    font-size: 1.5rem;
+    color: #D1D7E0;
+    margin: 2rem;
+  }
+
+  .links{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #478BE6;
+  }
+
+  .link-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .ditto{
+    width: 5rem !important;
+    height: 5rem !important;
+  }
+
+  img{
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  @media (width <1024px){
+    body {
+      background-image: url("");
+      background-size: contain;
+      transition: all ls linear;
+      overflow-x: hidden;
+    }
+  }
+  
+  @media (width >= 1024px) {
+    body {
+      background-image: url("");
+      overflow-x: hidden;
+    }
+  }
+
+  footer{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    padding: 2rem 0;
+    width: 100%;
+  }
+
+  .footer{
+    font-family: 'Courier New';
+    color: #D1D7E0;
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+
+  .footer-icon {
+    height: 30px;
+    width: 30px;
+}
